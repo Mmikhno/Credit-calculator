@@ -7,7 +7,7 @@ public class Main {
         int creditAmount = 1000000;
         double intRate = 9.99;
         int period = 3;
-        double payment =service.calculate(creditAmount,intRate,period);
+        double payment = service.calculate(creditAmount, intRate, period);
 
         int result = (int) payment;
 

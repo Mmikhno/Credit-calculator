@@ -7,12 +7,12 @@ public class CreditPaymentService {
 
         double monthlyPayment; // сумма ежемесячного платежа
 
-        monthlyIntRate = (interestRate/100)/12;
+        monthlyIntRate = (interestRate / 100) / 12;
 
         period = period * 12; // кол-во периодов выплат
 
         // расчет коэффициента аннуитета
-        rate = monthlyIntRate + monthlyIntRate/(Math.pow((1+monthlyIntRate),period)-1);
+        rate = monthlyIntRate + monthlyIntRate / (Math.pow((1 + monthlyIntRate), period) - 1);
 
         // расчет аннуитетного платежа:
         monthlyPayment = rate * creditAmount;
